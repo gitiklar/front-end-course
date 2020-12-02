@@ -1,0 +1,16 @@
+.box-sizing p {
+    background: lightblue;
+    width: 50%;
+    height: 100px;
+    padding: 50px;
+    margin: 15px;
+    border: 50px solid blue;
+    box-sizing: border-box;
+}
+
+.inline-block p {
+    width: 30%;
+    height: 100px;
+    margin: 0;
+    display: inline-block;
+}

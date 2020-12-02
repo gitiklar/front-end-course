@@ -1,0 +1,11 @@
+
+img{
+    width:20%;
+    vertical-align: top;
+    float: left;
+}
+
+.post {
+    clear: both;
+    padding-top: 10px;
+}

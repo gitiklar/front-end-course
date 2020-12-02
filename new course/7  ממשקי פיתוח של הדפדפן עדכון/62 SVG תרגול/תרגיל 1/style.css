@@ -1,0 +1,74 @@
+html,body {height: 100%;}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.all-page {
+    display: flex;
+    height: 100%;
+}
+
+.containerTextAreaAndTable {
+    flex: 1;
+    margin: 30px;
+    margin-top: 70px;
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+}
+
+textarea {
+    margin-bottom:10px;
+    flex: 1;
+    height: 45%;
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    overflow: scroll;
+}
+
+table {
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1;
+    height: 45%;
+    overflow: scroll;
+}
+
+.rectangleGraph {
+    flex:1;
+    margin: 30px;
+    margin-top: 70px;
+    height: 70%;
+    background-color:rgba(0, 0, 0, 0.05);
+}
+
+text {
+    stroke: #84D3DB;
+    stroke-width: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:17;
+}
+
+.rectangleGraph .svg-rect rect {
+    transition: all 0.5s;
+}
+
+.transition {
+    transition: all 0.5s;
+}
+
+.rectangleGraph .svg-rect rect:hover {
+    transform: translate(-6px,-10px);
+}
+
+.display-none {
+    display: none;
+}
+
+td {
+    word-wrap: break-word;
+    max-width: 80px;
+}

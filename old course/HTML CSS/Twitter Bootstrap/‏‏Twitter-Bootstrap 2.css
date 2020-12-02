@@ -1,0 +1,11 @@
+form {
+    margin-left: 50px;
+}
+
+.btn-danger.blue {
+    background-color: cyan;
+}
+
+danger:not(:disabled):not(.disabled).active, .btn-danger:not(:disabled):not(.disabled):active, .show>.btn-danger.dropdown-toggle.blue {
+    background-color: cyan;
+}

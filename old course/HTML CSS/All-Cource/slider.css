@@ -1,0 +1,19 @@
+.outline {
+    width: 300px;
+    border: 2px solid;
+    overflow: hidden;
+}
+
+.inline {
+    margin-left:0px;
+    width:999999px;
+    transition: all 0.5s;
+}
+
+img {
+    width: 300px;
+}
+
+em {
+    font-size: 25px;
+}

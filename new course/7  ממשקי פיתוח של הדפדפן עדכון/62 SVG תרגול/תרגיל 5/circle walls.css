@@ -1,0 +1,52 @@
+body,html {
+    height: 100%;
+}
+
+.title {
+    text-align: center;
+}
+
+.container-board-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+}
+
+.container-board {
+    flex: 1;
+}
+
+.div-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex: 1;
+    width: 1000;
+}
+
+button {
+    margin-top: 20px;
+    height: 40px;
+}
+
+svg:nth-child(1) {
+    background-color: lightcoral;
+}
+
+svg:nth-child(2) {
+    background-color: yellow;
+}
+
+.rectDown {
+    transition: all 0.1s;
+}
+
+.animation-ball {
+    transition: all 0.5s;
+}
+
+.display-none {
+    display: none;
+}

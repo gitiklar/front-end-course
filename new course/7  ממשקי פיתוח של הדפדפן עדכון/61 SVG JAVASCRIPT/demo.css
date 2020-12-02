@@ -1,0 +1,7 @@
+.click-able {
+    transition: all 0.5s;
+}
+
+svg {
+    background-color: aqua;
+}

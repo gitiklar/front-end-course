@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8">
+        <title>Sum of word</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel="stylesheet" href="word count.css">
+    </head>
+    <body>
+        <h1 class="title">Sum of Words</h1>
+        <div class="all-page">
+            <div class="container">
+                <textarea></textarea>
+                <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Word</th>
+                    <th>Count</th>
+                </tr>
+                </thead>
+                <tbody>
+                </tbody>
+                </table>
+            </div>
+            <svg class="rectangleGraph" width= "800" height="500" viewBox = "0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+                    <line x1="100" y1="430" x2="770" y2="430" stroke-width="1.5" stroke="#9a9c9e"/>
+                    <line x1="100" y1="380" x2="770" y2="380" stroke-width="1.5" stroke="#9a9c9e"/>
+                    <line x1="100" y1="330" x2="770" y2="330" stroke-width="1.5" stroke="#9a9c9e"/>
+                    <line x1="100" y1="280" x2="770" y2="280" stroke-width="1.5" stroke="#9a9c9e"/>
+                    <line x1="100" y1="230" x2="770" y2="230" stroke-width="1.5" stroke="#9a9c9e"/>
+                    <line x1="100" y1="180" x2="770" y2="180" stroke-width="1.5" stroke="#9a9c9e"/>
+                    <line x1="100" y1="130" x2="770" y2="130" stroke-width="1.5" stroke="#9a9c9e"/>
+                    <line x1="100" y1="80" x2="770" y2="80" stroke-width="1.5" stroke="#9a9c9e"/>
+                    <line x1="100" y1="30" x2="770" y2="30" stroke-width="1.5" stroke="#9a9c9e"/>
+                    <line x1="100" y1="-20" x2="770" y2="-20" stroke-width="1.5" stroke="#9a9c9e"/>
+
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="440" x="50">1</text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="390" x="50">2</text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="340" x="50">3</text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="290" x="50">4</text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="240" x="50">5</text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="190" x="50">6</text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="140" x="50">7</text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="90"  x="50">8</text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="40" x="50">9</text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="-10" x="50">10+</text>
+                    <g class="svg-rectangle">
+                        <rect stroke="#84D3DB" height="0" width="70" y="480" x="100" stroke-width="1.5" fill="#BF7E96"/>
+                        <rect stroke="#84D3DB" height="0" width="70" y="480" x="200" stroke-width="1.5" fill="#5B9BA2"/>
+                        <rect stroke="#84D3DB" height="0" width="70" y="480" x="300" stroke-width="1.5" fill="#CFCA6D"/>
+                        <rect stroke="#84D3DB" height="0" width="70" y="480" x="400" stroke-width="1.5" fill="#CC7C65"/>
+                        <rect stroke="#84D3DB" height="0" width="70" y="480" x="500" stroke-width="1.5" fill="#619E73"/>
+                        <rect stroke="#84D3DB" height="0" width="70" y="480" x="600" stroke-width="1.5" fill="rgb(223, 100, 100)"/>
+                        <rect stroke="#84D3DB" height="0" width="70" y="480" x="700" stroke-width="1.5" fill="rgb(123, 190, 231)"/>
+                    </g>
+                    <g class="svg-rectangle-text">
+                        <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="505" x="100" stroke-width="0"></text>
+                        <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="505" x="200" stroke-width="0"></text>
+                        <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="505" x="300" stroke-width="0"></text>
+                        <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="505" x="400" stroke-width="0"></text>
+                        <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="505" x="500" stroke-width="0"></text>
+                        <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="505" x="600" stroke-width="0"></text>
+                        <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" y="505" x="700" stroke-width="0"></text>
+                    </g>
+            </svg>
+            <svg class="circleGraph display-none" width="700" height="700" viewBox = "0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                <g class="svg-circle">
+                    <circle cx=100 cy=100 r=0 fill="#5B9BA2"></circle>
+                    <circle cx=300 cy=100 r=0 fill="#CFCA6D"></circle>
+                    <circle cx=500 cy=100 r=0 fill="rgb(11, 226, 11)"></circle>
+                    <circle cx=100 cy=300 r=0 fill="#BF7E96"></circle>
+                    <circle cx=300 cy=300 r=0 fill="#619E73"></circle>
+                    <circle cx=500 cy=300 r=0 fill="rgb(223, 100, 100)"></circle>
+                    <circle cx=100 cy=500 r=0 fill="rgb(123, 190, 231)"></circle>
+                    <circle cx=300 cy=500 r=0 fill="#CC7C65"></circle>
+                    <circle cx=500 cy=500 r=0 fill="rgb(146, 108, 173)"></circle>
+                </g>
+                <g class="svg-circle-text">
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" x=100 y=100 stroke-width="0"></text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" x=300 y=100 stroke-width="0"></text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" x=500 y=100 stroke-width="0"></text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" x=100 y=300 stroke-width="0"></text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" x=300 y=300 stroke-width="0"></text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" x=500 y=300 stroke-width="0"></text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" x=100 y=500 stroke-width="0"></text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" x=300 y=500 stroke-width="0"></text>
+                    <text font-style="italic" font-family="Oswald, sans-serif" font-size="20" x=500 y=500 stroke-width="0"></text>
+                </g>
+            </svg>
+            <svg class="flex-0">
+                <g class="svg-shape-pre display-none">
+
+                </g>
+                <g class="svg-text-pre display-none">
+
+                </g>
+            </svg>
+            <div class="linksConatiner">
+                <a class="linkCircle btn btn-outline-secondary" href="#circle">circle</a>
+                <a class="linkRectangle btn btn-outline-secondary display-none" href="#rectangle">rectangle</a>
+            </div>
+        </div>
+        
+        <script src="row.js"></script>
+        <script src="shape.js"></script>
+        <script src="rectangleGraph.js"></script>
+        <script src="circleGraph.js"></script>
+        <script src="application.js"></script>
+        <script src="main.js"></script>
+    </body>
+</html>

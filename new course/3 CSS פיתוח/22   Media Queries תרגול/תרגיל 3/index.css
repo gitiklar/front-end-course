@@ -1,0 +1,38 @@
+html {font-size: 0.5rem;}
+
+body {
+    margin: 20px 0;
+    font-family: 'Modak', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+}
+
+label {
+    font-size: 2rem;
+    display: block;
+    margin: 25px 0;
+}
+
+input {
+    line-height:2;
+    width: 35rem;
+}
+
+textarea {
+    height: 5rem;
+    width: 35rem;
+}
+
+@media(min-width:600px) {
+    label {
+        display: inline-block;
+    }
+}
+
+
+@media(min-width:1200px) {
+    .for-large-div div {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,52 @@
+body {
+    color: #2D3D48;
+    background-color: #D1D4D1;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 100px;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+    border-bottom: 2px solid #2D3D48;
+    box-shadow: -32px 32px 27px -2px rgba(0,0,0,0.43);
+}
+
+h2 {
+    border: 5px dotted #000000;
+}
+
+li {
+    line-height: 3;
+    background-size: 50px auto;
+    background-position:0 0 ;
+    background-repeat: no-repeat;
+    list-style: none;
+    padding-left: 50px;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+}
+
+li:nth-child(1) {
+    background-image: url(https://cache.desktopnexus.com/thumbseg/2259/2259026-bigthumbnail.jpg);
+}
+
+li:nth-child(2) {
+    background-image: url(https://i1.wp.com/consciouscat.net/wp-content/uploads/2020/03/kitten-fip-sad-e1584722698377.jpg?resize=640%2C426&ssl=1);
+}
+
+li:nth-child(3) {
+    background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/angry-kitten-jonathan-ross.jpg);
+}
+
+
+
+
+
+
+
+
+
+
+
+

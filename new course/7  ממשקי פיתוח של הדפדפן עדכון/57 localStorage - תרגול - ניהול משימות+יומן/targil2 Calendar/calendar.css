@@ -1,0 +1,42 @@
+body{text-align: center;}
+h1{
+    margin-top: 30px;
+    text-align: center;
+}
+
+textarea {
+    box-sizing: border-box;
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid rgb(79, 81, 82);
+    border-radius: 0.5em;
+    font-size: 2.5rem;
+    line-height: normal;
+    width: 65%;
+    text-align: center;
+}
+
+.box {
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-left: 16.5%;
+    display: flex;
+    width: 65%;
+    align-items: center;
+}
+
+.save {
+    flex: 1;
+    font-size: large;
+}
+
+.clear {
+    flex: 1;
+    font-size: large;
+    margin: 20px;
+}
+
+input [type="date"] {
+    flex: 1;
+}
+

@@ -1,0 +1,17 @@
+form {
+    padding: 3rem;
+    width: 50vw;
+    height: 70vh;
+    margin-top: 10rem;
+    margin-left: 25vw;
+    border: 1px solid #ced4da;
+    border-radius: 1rem;
+}
+
+form h1 {
+    text-align: center;
+}
+
+button {
+    margin-top: 1rem;
+}

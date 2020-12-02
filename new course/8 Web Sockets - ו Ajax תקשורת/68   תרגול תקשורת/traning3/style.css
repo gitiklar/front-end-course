@@ -1,0 +1,84 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "left right";           
+}
+
+h1 {
+    margin-top: 50px;
+    color: red;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.left-side {
+    grid-area: left;
+    width: 65vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.right-side {
+    margin-top: 50px;
+    grid-area: right;
+    width: 35vw;
+    background-color: white;
+}
+
+.left-side .container {
+    display: flex;
+    justify-content: space-around;
+    height: calc(100vh - 148px);
+    overflow: auto;
+}
+
+.left-side .starShip {
+    width: 40%;
+}
+
+.left-side .pilots {
+    width: 40%;
+}
+
+.starShip label , .pilots label {
+    color: white;
+}
+
+p span {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 40px;
+    text-align: center;
+}
+
+.right-side button {
+    width: 300px;
+    background-color: black;
+    color: white;
+    margin-left: calc(17.5vw - 150px);
+}
+
+.right-side button:hover {
+    color: red;
+    cursor: pointer;
+}
+
+.win {
+    background-color: red;
+    color: white;
+}
+
+.win.green {
+    color: black;
+    background-color: greenyellow;
+}

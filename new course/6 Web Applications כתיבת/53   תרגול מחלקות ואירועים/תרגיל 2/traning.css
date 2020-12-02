@@ -1,0 +1,64 @@
+body,html {padding: 0; margin: 0; height: 100vh; width: 100vw;}
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+input {
+    margin-top: 55px;
+    width: 584px;
+    box-sizing: border-box;
+    bottom: 0;
+    font-size: 16px;
+    height: 44px;
+    line-height: 44px;
+    text-align: initial;
+    white-space: nowrap;
+    padding-inline-start: 20px;
+    border-radius: 22px;
+    border: none;
+    box-shadow: 0 1px 6px 0 rgba(32, 33, 36, .28);
+    cursor: text;
+}
+
+::placeholder {
+    color: rgb(117, 117, 117);
+}
+
+:focus {
+    outline:0px;
+}
+
+.divContainer {
+    width: 584px;
+    height: 50vh;
+    overflow: auto;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 0 !important;
+ }
+
+.row {
+    width: 584px;
+    height: 2rem;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: rgba(220, 222, 230, 0.28);
+    box-shadow: 0 1px 1px 0 rgba(32, 33, 36, .28);
+    border-radius: 22px;
+}
+
+.row:hover {
+    background-color: rgba(32, 33, 36, .28);
+}
+
+.svgContainer {
+    height: 92px;
+    width: 272px;
+}

@@ -1,0 +1,30 @@
+.no {
+    display: none;    
+}
+
+.butterfly {
+    transition: all 0.5s;
+}
+
+.butterfly:hover {
+    transform: scale(2) translate(-100px,-100px);
+
+}
+
+.bus {
+    transition: all 0.5s;
+}
+
+.bus:hover {
+    transform: scale(1.5) translate(70px,70px);
+}
+
+.circle{
+    background-color: blueviolet;
+}
+
+circle {
+    fill: orange;
+    stroke: rgb(30, 31, 30);
+    stroke-width: 4px;
+}

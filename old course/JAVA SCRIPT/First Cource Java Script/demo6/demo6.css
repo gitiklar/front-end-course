@@ -1,0 +1,10 @@
+
+.box {
+  display:inline-block;
+  background: lightblue;
+  width: calc(30% - 30px);
+  font-size: 24px;
+  margin: 10px;
+  padding: 5px;
+  vertical-align: top;
+}

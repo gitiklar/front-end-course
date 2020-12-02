@@ -1,0 +1,25 @@
+.container-board-button {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+}
+
+.container-board {
+    flex: 6;
+}
+
+.div-btns {
+    flex: 1;display: flex;
+    flex-direction: column;
+    width: 1000;
+    justify-content: flex-start;
+}
+
+svg {
+    background-color: lightcoral;
+}
+
+.ball {
+    transition: all 0.5s;
+}

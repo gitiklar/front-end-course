@@ -1,0 +1,62 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "left right";           
+}
+
+h1 {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2rem;
+}
+
+.left-side {
+    grid-area: left;
+    width: 65vw;
+    height: 100vh;
+    background-color: black;
+}
+
+.right-side {
+    margin-top: 50px;
+    grid-area: right;
+    width: 35vw;
+    background-color: white;
+}
+
+.left-side .container {
+    display: flex;
+    justify-content: space-around;
+    height: calc(100vh - 148px);
+    overflow: auto;
+}
+
+.left-side .peoples {
+    width: 40%;
+}
+
+.left-side .films {
+    width: 40%;
+}
+
+.peoples label , .films label {
+    color: white;
+}
+
+p span {
+    display: block;
+    text-align: center;
+    font-size: larger;
+    margin-bottom: 30px;
+}
+
+p {
+    margin: 40px;
+    text-align: center;
+}

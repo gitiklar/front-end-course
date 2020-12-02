@@ -1,0 +1,96 @@
+html,body {height: 100%;}
+
+.title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.all-page {
+    display: flex;
+    height: 100%;
+}
+
+.container {
+    flex: 10;
+    margin: 30px;
+    margin-top: 70px;
+    display: flex;
+    height: 70%;
+    flex-direction: column;
+}
+
+textarea {
+    margin-bottom:10px;
+    flex: 1;
+    height: 45%;
+    width: 100%;
+    padding: 20px;
+    font-size: 30px;
+    overflow: scroll;
+}
+
+table {
+    text-align: center;
+    box-sizing: border-box;
+    flex: 1;
+    height: 45%;
+    overflow: scroll;
+}
+
+.rectangleGraph {
+    flex:10;
+    margin: 30px;
+    margin-top: 70px;
+    height: 72%;
+    background-color:rgba(0, 0, 0, 0.05);
+}
+
+.circleGraph {
+    margin: 30px;
+    margin-top: 70px;
+    background-color:rgba(0, 0, 0, 0.05);
+}
+
+.all-page .linksConatiner {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 70px;
+    margin-right: 15px;
+    height: 72%;
+    flex: 1;
+}
+
+text {
+    stroke: #84D3DB;
+    stroke-width: 0;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size:17;
+}
+
+.rectangleGraph .svg-rectangle rect {
+    transition: all 0.5s;
+}
+
+.rectangleGraph .svg-rectangle rect:hover {
+    transform: translate(-6px,-10px);
+}
+
+.circleGraph .svg-circle circle {
+    transition: all 0.5s;
+}
+
+.circleGraph .svg-circle circle:hover {
+    transform: translate(-6px,-10px);
+}
+
+.display-none {
+    display: none;
+}
+
+td {
+    word-wrap: break-word;
+    max-width: 80px;
+}
+.flex-0{
+    flex: 0;
+}

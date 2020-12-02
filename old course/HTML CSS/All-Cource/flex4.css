@@ -1,0 +1,39 @@
+.box {
+    display: flex;
+}
+
+.col {
+    flex: 1;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.a {
+    background-color: green;
+}
+
+.b {
+    background-color: red;
+}
+
+.c {
+    background-color: blue;
+}
+
+.d {
+    background-color: yellow;
+}
+
+.e {
+    background-color: orange;
+}
+
+@media(max-width:700px) {
+    .box {
+        flex-direction: column;
+    }
+    
+    .c {
+        order: -5;
+    }
+}

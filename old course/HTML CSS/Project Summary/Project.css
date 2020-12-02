@@ -1,0 +1,19 @@
+*{margin-top: 0px;}
+
+.display-4 {
+    background-color: #d6d6d6;
+}
+
+div {
+    text-align: center;
+    padding: 5px;
+}
+
+.col:nth-last-of-type(1) {
+     background: #eadede;
+}
+
+.col:nth-last-of-type(2) {
+     background: #bbbec1;
+}
+

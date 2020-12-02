@@ -1,0 +1,341 @@
+body {
+    display: grid;
+    grid-template-areas: "header  header  header"
+                        "asideLeft main asideRight";
+    margin: 0;
+}
+
+.header {
+    grid-area: header;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(#090A0C 0%,#662234 10%, #090A0C 50%, #662234, #090A0C 100%);
+}
+
+.header h1 {
+    color: white;
+    font-size: 4rem;
+    font-family: 'Flavors', cursive;
+}
+
+.main {
+    grid-area: main;
+    height: 85vh;
+    width: 70vw;
+    border-collapse: collapse;
+    position: relative;
+    border: 5px solid #662234;
+}
+
+.asideLeft {
+    grid-area: asideLeft;
+    height: 85vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #090A0C;
+}
+
+.asideLeft .h3 , .asideRight .h3 {
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.2rem;
+    font-family: 'Goblin One', cursive;
+    color: white;
+}
+
+.asideRight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: asideRight;
+    height: 85vh;
+    width: 15vw;
+    background-color: #090A0C;
+}
+
+.asideLeft div:not(.h3) {
+    display: flex;
+    margin: 0.3rem;
+    border: 1px solid;
+    border-radius: 1rem;
+    background-color: #662234;
+    border-color: #662234;
+}
+
+.asideLeft div:not(.h3):hover {
+    background-color: #381620 !important;
+    border-color: #381620 !important;
+}
+
+.asideLeft div svg *:hover {
+    stroke: white !important;
+}
+
+.asideLeft div svg {
+    width: 4.5em;
+    height: 4.5em;
+    border: 1px solid white;
+    border-radius: 1rem;
+}
+
+.svgMain {
+    width: 100%;
+    height: 100%;
+}
+
+.asideRight .formProperties {
+    height: 100%;
+}
+
+.asideRight .formProperties .inputsDiv  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formProperties label {
+    color: white;
+    background: #662234;
+    border-radius: 5px;
+    font:20px/normal sans-serif;
+    height: calc(85vh/10);
+    width: 96%;
+}
+
+.textCSS label {
+    height: calc(85vh/15);
+}
+
+.formProperties input:not([type="color"]) {
+    width: 100%;
+    color:white;
+    background: #662234;
+    border: #662234;
+    border-radius: 5px;
+    font:24px/normal sans-serif;
+    text-align: center;
+}
+
+.asideRight .formProperties .allSixSaveAndLoadButtons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    width: 100%;
+    height: 90px;
+    max-height: 110px;
+    align-items: center;
+}
+
+.asideRight .formProperties .allSixSaveAndLoadButtons *, .asideRight .formProperties .fontSelector , .asideRight .formProperties .fontSelector * {
+    background-color: #662234;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 48%;
+    height: 28%;
+    margin-bottom: 0px;
+    font:18px/normal sans-serif;
+}
+
+#allSixSaveAndLoadButtons *:hover {
+    background-color: #381620;
+}
+
+.dropdown {
+    width: 96%;
+    margin-bottom: .5rem;
+}
+
+.asideRight .formProperties .fontSelector , .asideRight .formProperties .fontSelector *{
+    width: 100%;
+    height: calc(85vh/20);
+}
+
+.fontSelector.btn {
+    padding:.6rem 1rem;
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem #572f3b;
+}
+
+.allSixSaveAndLoadButtons * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-height:960px) {
+    .formProperties input:not([type="color"]) , .formProperties label, .asideRight .formProperties .allSixSaveAndLoadButtons * , .asideRight .formProperties .fontSelector , .asideRight .formProperties .fontSelector * {
+        font:13px/normal sans-serif;
+    }
+
+    .asideLeft div svg {
+        width: 3.5em;
+        height: 3.5em;
+    }
+}
+
+.formProperties input[type="color"] {
+    opacity: 0;
+}
+
+label.color {
+  background: linear-gradient(45deg, red 0%, #ff0 17%, lime 33%, cyan 50%, blue 66%, #f0f 83%, red 100%);
+  border: 2px solid #1F2667;
+  border-radius: 5px;
+  color: #1F2667;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3em;
+  position: relative;
+}
+
+label.color span {
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+::selection {
+    background: none;
+}
+
+.formProperties input:focus {
+    outline: none;
+}
+
+.main {
+    position: relative;
+}
+
+.list-group:not(.imagesSaveList) {
+    position: absolute;
+}
+
+.list-group li {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    height: 45px;
+}
+
+.list-group li:hover {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+}
+
+[type="text"] + span::after {
+    content: ':';
+}
+
+.color span {
+    color:white;
+}
+
+#inputGroupFile {
+    display: none;
+}
+
+.loadContainer , .saveContainer {
+    position: absolute;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 25vh;
+    padding: 50px;
+    background-color: #662234;
+}
+
+@media (max-height:960px) {
+    .loadContainer , .saveContainer {
+        margin-top: 18vh;
+    }
+}
+
+.loadContainer h4 , .saveContainer h4 {
+    color: white;
+    font-size: 1.7rem;
+}
+
+.loadContainer .btn , .saveContainer .btn {
+    background-color: #662234;
+    border: 1px solid white;
+    color: white;
+}
+
+.loadContainer .cancel , .saveContainer .btn {
+    margin-top: 1rem;
+}
+.saveContainer input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    font-size: 20px;
+}
+.imagesSaveList {
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.imageNameAndDeleteButtonContainer {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.imageNameAndDeleteButtonContainer button {
+    width: 15%;
+}
+
+.imageNameAndDeleteButtonContainer a {
+    width: 80%;
+}
+
+.list-group-item {
+    border: none;
+}
+
+.display {
+    display: block;
+}
+
+.dropdown-menu {
+    text-align: center;
+}
+
+.dropdown-menu.fontSelector.display {
+    height: 300px;
+    overflow: auto;
+}
+
+.dropdown-menu.fontSelector.display *{
+    width: 100%;
+}
+
+@media (max-height:960px) {
+    .dropdown-menu.fontSelector.display {
+        height: 200px;
+    }
+}
+
+.dropdown , .dropDownBtn , .dropDownList {
+    width: 180px;
+}

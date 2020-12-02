@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+        <link href='http://serve.fontsproject.com/css?family=Stopmotion:400'
+        rel='stylesheet' type='text/css'>
+              <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        <link rel="stylesheet" href="traning5.css"/>
+        <title>memory game</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="left">
+                <main class="imageContainer">
+                    <img src="banana.jpg" alt=""/>
+                    <img src="banana.jpg" alt=""/>
+                    <img src="apple.jpg" alt=""/>
+                    <img src="apple.jpg" alt=""/>
+                    <img src="ananas.jpg" alt=""/>
+                    <img src="ananas.jpg" alt=""/>
+                    <img src="orange.jpg" alt=""/>
+                    <img src="orange.jpg" alt=""/>
+                    <img src="melon.jpg" alt=""/>
+                    <img src="melon.jpg" alt=""/>
+                    <img src="kivi.jpg" alt=""/>
+                    <img src="kivi.jpg" alt=""/>
+                    <img src="grapes.jpg" alt=""/>
+                    <img src="grapes.jpg" alt=""/>
+                    <img src="corn.jpg" alt=""/>
+                    <img src="corn.jpg" alt=""/>
+                    <img src="cherry.jpg" alt=""/>
+                    <img src="cherry.jpg" alt=""/>
+                    <img src="watermelon.jpg" alt=""/>
+                    <img src="watermelon.jpg" alt=""/>
+                    <img src="tamar.jpg" alt=""/>
+                    <img src="tamar.jpg" alt=""/>
+                    <img src="strawberry.jpg" alt=""/>
+                    <img src="strawberry.jpg" alt=""/>
+                    <img src="pomegranate.jpg" alt=""/>
+                    <img src="pomegranate.jpg" alt=""/>
+                    <img src="plum.jpg" alt=""/>
+                    <img src="plum.jpg" alt=""/>
+                    <img src="peach.jpg" alt=""/>
+                    <img src="peach.jpg" alt=""/>
+                </main>
+            </div>
+            <div class="right">
+                <h1>משחק הזכרון</h1>
+                <button class="easy btn btn-lg btn-danger" title="קל">
+                    קל 
+              </button>
+                <button class="medium btn btn-lg btn-danger" title="בינוני">
+                    בינוני
+                  </button>
+                  <button class="hard btn btn-lg btn-danger" title="קשה">
+                    קשה
+                   </button>
+                   <p class="winnerAlert" dir="rtl">כל הכבוד! מצאת את כל הזוגות!</p>
+                   <div class="timeOutContainer">
+                      <p class="timeOut" dir="rtl">  תם זמנך <span>&#9785;</span></p>
+                   </div>
+
+                   <div class="clock">          
+                    <div class="digit minutes">
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                    </div>
+                  
+                    <div class="digit minutes">
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                    </div>
+
+                    <div class="separators">
+                      <div class="separator"></div>
+                      <div class="separator"></div>
+                    </div>
+
+
+                    <div class="digit seconds">
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                    </div>
+                  
+                    <div class="digit seconds">
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                      <div class="segment"></div>
+                    </div>
+                  </div>
+            </div>
+
+        </div>
+        
+        <script type="template" class="noscript">
+          <div class="digit minutes">
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+          </div>
+        
+          <div class="digit minutes">
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+          </div>
+        
+          <div class="separators">
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>        
+          <div class="digit seconds">
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+          </div>
+        
+          <div class="digit seconds">
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+            <div class="segment"></div>
+          </div>
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.ui.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="traning5.js"></script>
+    </body>
+</html>

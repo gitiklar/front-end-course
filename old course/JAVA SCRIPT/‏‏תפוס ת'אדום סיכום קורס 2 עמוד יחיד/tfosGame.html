@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+    <link rel="stylesheet" href="tfosGame.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOHר8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">    
+</head>
+<body>
+    <span class="main">
+    </span>
+
+
+<script type="template" id="game">
+        <div class="alert alert-success">
+            <strong dir="rtl">כל הכבוד!!!</strong> 
+        </div>
+        
+        <div class="box">
+            <h1>תפוס ת'אדום</h1>
+            <p class="linkForHelp">
+                <a href="#help" class="linkForHelp"2>עזרה</a>
+            </p>
+        </div>
+        
+        <div class="game">
+                <div class="grid">
+                </div>
+        
+                <div class="sidebar">
+                    
+                    <h2>הגדרות המשחק</h2>
+                    
+                    <div class="dropdown">
+                        <button dir="rtl" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> בחר רמה 
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">2X2</a>
+                                <a class="dropdown-item" href="#">3X3</a>
+                                <a class="dropdown-item" href="#">4X4</a>
+                        </div> 
+                    </div>
+                    
+                    <div dir="rtl" class="score">  ניקוד:<num>0</num></div>
+                    
+                    <div class="color" dir="rtl">
+                        בחר צבע: 
+                        <input type="color" id="bgcolor" value="#9abde2"/>
+                    </div>
+                    
+                    
+                    <div class="out">
+                        <img src="b.JPG">
+                    </div>
+                    
+                </div>
+        </div>
+</script>
+
+<script type="template" id="help">
+            <h1 class="titleHelp">עזרה</h1>
+            <h4>
+                <p dir="rtl">
+                   ברוכים הבאים למשחק ת'פוס ת'אדום!!
+מטרת המשחק היא לצבור כמה שיותר נקודות. 
+וכיצד צוברים נקודות?
+לוח המשחק מחולק למספר ריבועים לפי בחירתך.
+עליך ללחוץ על הריבוע האדום אשר משנה את מקומו בכל שניה.
+כל לחיצה על הריבוע האדום תזכה אותך ב-5 נקודות וכל שניה ללא לחיצה תגרע ממך 2 נקודות.
+לעומת זאת כל לחיצה על ריבוע שאינו אדום תגרע ממך 5 נקודות .
+(צבע הריבועים האחרים תלוי בבחירתך)
+כאשר תגיע ל--50 נקודות תופיע תמונה כצ'ופר :)
+בהנאה!
+                </p>
+                <p>
+                    <a href="#game">חזרה למשחק</a>
+                </p>
+            </h4>
+            
+</script>
+    
+<script type="template" id="welcome">
+<div class="welcome">
+    <p>
+        !!!ברוכים הבאים חזרה למשחק
+    </p>
+</div>
+</script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="Page.js".js></script>
+    <script src="GamePage.js"></script>
+    <script src="HelpPage.js"></script>
+    <script src="Application.js"></script>
+    <script src="Main.js"></script>
+</body>
+</html>

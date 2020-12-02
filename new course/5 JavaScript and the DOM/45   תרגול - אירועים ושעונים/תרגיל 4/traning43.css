@@ -1,0 +1,179 @@
+html,body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "game form"
+                         "game form";
+    height: 100vh;
+}
+
+.allGame {
+    grid-area: game;
+    background-color: #7F95D1;
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+aside {
+    grid-area: form;
+    background-color: #FF82A9;
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+form {
+    margin-top: 10vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.svgBoard {
+    box-sizing: border-box;
+    border: 0.5rem solid #f39693;
+    background-color: #FFEBE7;
+    width: 35rem;
+    height: 35rem;
+}
+
+form * {
+    width: 100%;
+}
+
+form p {
+    font-size: 2.5rem;
+    text-align: center;
+    font-family: 'rubik';
+    color: #30394F;
+}
+
+.btn , .btn-secondary.disabled, .btn-secondary:disabled {
+    font-size: 2rem;
+    background-color: #BF8CBD;
+    color: #30394F;
+    border: none;
+    font-family: 'rubik';
+    opacity:1;
+}
+
+.btn:hover {
+    background-color: #aa56a7;
+}
+
+h1 {
+    font-family: 'Diplomata', cursive;
+    font-family: 'Ultra', serif;
+    font-size: 3rem;
+    margin:1rem  0rem;
+    color: #30394F;
+}
+
+.gameOver {
+    position: absolute;
+    width: 500px;
+    font-family: 'Faster One', cursive;
+    font-size: 5rem;
+    left: 0;
+    top: 0;
+}
+
+form button:not(.dropdown-item) {
+    margin-top: 30px;
+}
+
+button.dropdown-item {
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'rubik';
+}
+
+@media(min-width:1600px) {
+    .svgBoard {
+        width: 45rem;
+        height: 45rem;
+    }
+
+    .btn , .btn-secondary.disabled, .btn-secondary:disabled {
+        font-size: 2.5rem;
+    }
+
+    form button:not(.dropdown-item) {
+        margin-top: 50px;
+    }
+
+    .scoreTable {
+        font-size: 2rem;
+    }
+}
+
+.scoreTable {
+    position: absolute;
+    overflow: auto;
+    background-color: #212529;
+    font-family: 'rubik';
+    font-size: 1.5rem;
+}
+
+@media(min-width:1850px) {
+    .svgBoard {
+        width: 52rem;
+        height: 52rem;
+    }
+
+    .btn , .btn-secondary.disabled, .btn-secondary:disabled {
+        font-size: 3rem;
+    }
+
+    form button:not(.dropdown-item) {
+        margin-top: 50px;
+    }
+
+    .scoreTable {
+        font-size: 2rem;
+    }
+}
+
+.allGame .name {
+    position: absolute;
+    width: 50px;
+    font-size: 2rem;
+    left: 0;    
+    top: 0;
+}
+
+.alert {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 450px;
+    height: 200px;
+    border-radius: 15px;
+    background-color: #7F95D1;
+}
+
+.alert button {
+    margin-top: 10px;
+    width: 100px;
+    height: 40px;
+    font-size: 1rem;
+    background-color: #FF82A9;
+    color: #30394F;
+    border-radius: 10px;
+    border: none;
+}
+
+.alert label {
+    font-size: 2.5rem;
+}
+
+.scoreTable table th , td {
+    text-align: center;
+}

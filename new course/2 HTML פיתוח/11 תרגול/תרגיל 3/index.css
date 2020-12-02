@@ -1,0 +1,289 @@
+body,html{padding: 0px; margin: 0px;}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 71px;
+    background-color: #1b314b;
+    display: flex;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+header>.left {
+    flex: 1;
+    height: 100%;
+    margin-left: 20px;
+}
+
+p {
+    display: inline-block;
+    margin: 8px;
+}
+
+.alexa-logo {
+    height: 44px;
+    margin-top: 13.5px;
+}
+
+header>.right {
+    flex:1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 18px;
+}
+
+.right>.first-row {
+    margin-top: 5px;
+    margin-right: 7px;
+    flex:1;
+}
+
+.right>.first-row>nav>a {
+    text-decoration: none;
+    margin-right: 3px;
+    color: white;
+    font-weight: 700;
+    font-size: 10.5px;
+}
+
+.right>.first-row>nav>a:hover {
+    color: #f05323 ;
+}
+
+.right>.second-row {
+    flex:1;
+    margin-bottom: 8px;
+}
+
+.right>.second-row>select {
+    color: white;
+    background-color: #1b314b;
+    border: none;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.right>.second-row>select:hover {
+    color: #f05323;
+}
+
+.right>.second-row>select:after {
+    content: "▼";
+}
+
+
+.right>.second-row>nav {
+    display: inline;
+}
+
+.right>.second-row>nav>a {
+    text-decoration: none;
+    margin-right: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.right>.second-row>nav>a:nth-child(1):hover {
+    color: #f05323;
+}
+
+.right>.second-row>nav>a:nth-child(2) {
+    display: inline-block;
+    height:30px ;
+    background-color: #f05323;
+    font-weight: 700;
+    font-size: 13.5px;
+}
+
+.right>.second-row>nav>a:nth-child(2):hover {
+    background-color: #f36929;
+}
+
+main {
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+h1 {
+    display: flex;
+    color: #333;
+    font-size: 22px;
+    font-weight: 600;
+    align-items: center;    
+}
+
+h1 > span {
+    display: inline-block;
+    margin-left: 4px;
+    font-weight: 600;
+}
+
+h1 > span > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    color: white;
+    width: 13px;
+    height: 13px;
+    border-radius: 50px;
+    background-color: rgb(185, 184, 184);
+}
+
+h1 > span > span:hover {
+    background-color:gray;
+    cursor: default;
+}
+
+main>nav {
+    border-bottom: 1px solid #eaeaea;
+}
+
+main>nav>a {
+    font-size: 15px;
+    color: #555;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+main>.nav-1>a:nth-child(2) {
+    height: 22px;
+    display: inline-block;
+    border-bottom: 3px solid #3b81de;
+}
+
+main>.nav-2 .list>a {
+    display: block;
+    text-decoration: none;
+    color: #3b81de;
+    margin-bottom: 5px;
+}
+
+main>.nav-2 .list>a:hover {
+    text-decoration: underline;
+}
+
+
+main>.nav-2 {
+    margin-top: 25px;
+    padding: 25px;
+    padding-left: 40px;
+    border: 1px solid #eaeaea;
+    border-bottom: 3px solid #eaeaea;
+    font-size:12px;
+}
+
+main>.nav-2> a {
+    display: inline-block;
+    margin-top: 40px;
+    color: #3b81de;
+    font-size: 12px;
+}
+
+table {
+    width: 100%;
+}
+
+footer {
+    box-sizing: border-box;
+    padding-top: 15px;
+}
+
+footer > div {
+    height: 100%;
+    background-color: #164775;
+}
+
+footer > div > section {
+    padding-left: 15%;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: small;
+    display: flex;
+    height: 284px;
+    width: 70%;
+    background-color: #164775;
+}
+
+footer > div > section > ul > li:nth-child(1) {
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+footer > div > section > ul > li {
+    margin-bottom: 15px;
+    color: white;
+}
+
+footer > div > section > ul {
+    padding-top: 20px;
+    flex: 1;
+    list-style: none;
+}
+
+footer > div > section > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+footer > section {
+    display: flex;
+    height: 58px;
+    width: 100%;
+    background-color: #1b314b;
+}
+
+footer > section > .left {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 65px
+}
+
+footer > section > .right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 170px;
+}
+
+footer >section > .left, footer >section >.left> a {
+    color: white;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    font-size: 10.5px;
+    letter-spacing: 1px;
+}
+
+footer >section >.left> a {
+    margin-left: 8px; 
+    margin-right: 8px;   
+}
+
+.icon-alexa {
+    width: 30px;
+}
+
+.icon-facebook {
+    width: 25px;
+}
+
+.icon-twitter {
+    width: 25px;
+}
+
+footer > section > .right >a {
+    padding: 10px;
+    color: white;
+    font-family: 'Fira Sans', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 900;
+}

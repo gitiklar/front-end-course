@@ -1,0 +1,10 @@
+p {
+    background: lightblue;
+    width: 40%;
+    height: 100px;
+    padding: 10px;
+    border: 15px solid purple;
+    margin: 0px;
+    box-sizing: border-box;
+    display: inline-block;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8" />
+        <title>Animate.CSS Demo</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" />        
+        <style>
+            #box { width: 200px; height: 200px; background: blue; }
+            button{ 
+                background-color: -internal-light-dark-color(rgb(239, 239, 239), rgb(74, 74, 74));
+                color: black;
+                border-color: black;
+                width: 30rem;
+                height: 10rem;
+            }
+            button:disabled {
+                background-color: -internal-light-dark-color(rgb(239, 239, 239), rgb(74, 74, 74));
+                color: black;
+                border-color: black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <button class="disable">Bounce</button>
+        <div id="box"></div>
+        <p>Visit animate.css <a href="https://github.com/daneden/animate.css">Project Home</a> for a full list of animation options</p>
+        <script src="demo2.js"></script>
+    </body>
+</html>

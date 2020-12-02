@@ -1,0 +1,24 @@
+html {font-size: 3rem; margin: 50px;}
+
+.gallery {
+    column-count: 4;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
+img {
+    border-radius: 15px;
+    border: 5px solid rgb(0, 255, 42);
+    transition: all 0.5s;
+    width: 500px;
+    max-width: 100%;
+    margin: 10px;
+}
+
+img:hover {
+    filter: grayscale(1);
+}

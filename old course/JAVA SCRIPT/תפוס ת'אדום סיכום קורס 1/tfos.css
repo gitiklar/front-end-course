@@ -1,0 +1,86 @@
+body,html {width: 100%; height: 95%;}
+
+.box {
+    display: flex;
+    background-color: cadetblue;
+}
+
+h1 {
+    flex: 1;
+    text-align: center;
+}
+
+.all-game {
+    display: flex;
+    height: 95%;
+    width: 99%;
+    margin: 10px;
+}
+
+.sidebar {
+    flex: 1;
+    background-color: #ecccdb;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+
+.grid {
+    flex: 3;
+    box-sizing: border-box;
+    display: grid;
+}
+
+.squre {
+    border: solid;
+    margin: 10px;
+}
+
+h2 {
+    box-sizing: border-box;
+    padding-top: 40px;
+    text-align: center;
+    flex: 1;
+}
+
+.dropdown {
+    text-align: center;
+    flex: 1;
+}
+
+.score {
+    text-align: center;
+    font-size: 30px;
+    flex: 1;
+}
+
+.out {
+    flex: 2;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+img {
+    padding-bottom: 25px;
+    grid-column: 2/span 2;
+    width: 250px;
+    display: none;
+}
+
+.alert-success {
+    text-align: center;
+    font-size: 70px;
+    height: 150px;
+    display: none;
+}
+
+.display-yes {
+    display: block;
+}
+
+.color {
+    text-align: center;
+    font-size: 30px;
+    flex: 1;
+}

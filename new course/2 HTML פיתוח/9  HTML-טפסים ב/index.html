@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>Form Demo</title>
+    </head>
+    <body>
+        <form method="GET" action="/contact.php">
+            <div>
+                <label>Name:
+                    <input type="text" name="name"/>
+                </label>
+            </div>
+
+            <div>
+            <label>Email:
+                <input type="email" name="email"/>
+            </label>
+            </div>
+
+            <div>
+            <label>
+                Category:
+                <select name="category">
+                    <option value="1">Sales</option>
+                    <option value="2">Tech Support</option>
+                    <option value="3">Other</option>
+                </select>
+            </label>
+            </div>
+
+            <div>
+            <label>
+                Your message:
+                <textarea name="message"></textarea>
+            </label>
+            </div>
+            <button type="submit">Send Message</button>
+            <input type="submit" value="Send Message"/>
+        </form>
+    </body>
+</html>

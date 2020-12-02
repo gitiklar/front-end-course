@@ -1,0 +1,40 @@
+body,html {
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar .menu {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar .menu li {
+    margin: 10px 5px;
+}
+
+.sidebar a {
+  color: #ECE5F0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar {
+  background: #012622;
+  flex: 1;
+  min-width:200px;
+}
+
+.main {
+  background: #ECE5F0;
+  flex: 3;
+}
+
+@media(min-width:768px) {
+.container {
+      flex-direction: row;
+    }
+}

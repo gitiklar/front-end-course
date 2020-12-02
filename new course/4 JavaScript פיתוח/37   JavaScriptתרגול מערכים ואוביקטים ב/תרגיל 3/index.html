@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf8"/>
+        <title>Traning3</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+    <body>
+        <header>
+            <h1>איקס עיגול</h1>
+        </header>
+        <main class="board">
+            <button id = "hover" class="btn-primary"></button>
+            <button id = "hover" class="btn-primary"></button>
+            <button id = "hover" class="btn-primary"></button>
+            <button id = "hover" class="btn-primary"></button>
+            <button id = "hover" class="btn-primary"></button>
+            <button id = "hover" class="btn-primary"></button>
+            <button id = "hover" class="btn-primary"></button>
+            <button id = "hover" class="btn-primary"></button>
+            <button id = "hover" class="btn-primary"></button>
+        </main>
+        <aside>
+            <form>
+                <label>
+                    <span dir="rtl">X שחקן ראשון:</span>
+                    <input dir="rtl" class="firstPlayer" type="text"/>
+                </label>
+                <label>
+                    <span dir="rtl">O שחקן שני:</span>
+                    <input dir="rtl" class="secondPlayer" type="text"/>
+                </label>
+            </form>
+        </aside>
+        <footer>
+            <button class="new-game">משחק חדש</button>
+        </footer>
+          
+        <script type="templete" class="scriptX">
+            <svg class="X" viewBox="0 0 24 24"  xmlns="http://www.w3.org/2000/svg" width="100" height="100"><path d="M24 20.188l-8.315-8.209 8.2-8.282-3.697-3.697-8.212 8.318-8.31-8.203-3.666 3.666 8.321 8.24-8.206 8.313 3.666 3.666 8.237-8.318 8.285 8.203z"/></svg>
+        </script>
+        <script type="templete" class="scriptO">
+            <svg class="O" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><circle cx="51" cy="51" r="35" stroke="black" stroke-width="10" fill="none"/></svg>
+        </script>
+        <script src="index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+header {
+    background:#119397;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: #F7F1E6;
+    font-family: 'Modak', cursive;
+    font-family: 'Rubik', sans-serif;
+    font-size: 5rem;
+    letter-spacing: 15px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+main img {
+    margin: 50px 0;
+    width: 1200px;
+    height: 668.297px;
+    max-height: 70vh;
+    border-radius: 15px;
+    border: 5px solid #2A313E;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery img {
+    border-radius: 5px;
+    border: 1.5px solid #2A313E;
+    width: 100px;
+    height: 66.656px;
+    margin: 0 2px;
+    filter: grayscale();
+}
+
+.gallery img:hover {
+    filter: none;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    width: 15%;
+    opacity: .5;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover {
+    cursor: pointer;
+}
+
+.carousel-control-next span, .carousel-control-prev span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.carousel-control-next span {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.carousel-control-prev span {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}

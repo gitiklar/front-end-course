@@ -1,0 +1,23 @@
+.box {
+    display: flex;
+}
+
+.box > div {
+  //  flex: 1;
+    background: red;
+    height: 100px;
+}
+
+.box > div:nth-child(1) {
+    width: 100px;
+}
+
+.box > div:nth-child(2) {
+    flex: 2;
+   background: green;
+}
+
+.box > div:nth-child(3) {
+    flex: 1;
+    background: gold;
+}

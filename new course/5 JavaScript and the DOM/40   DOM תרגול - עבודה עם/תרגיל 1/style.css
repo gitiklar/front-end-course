@@ -1,0 +1,30 @@
+body,html {font-size: 3px; margin: 0; padding: 0;}
+
+table {
+    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    align-items: center;
+}
+
+tbody {
+    margin: 10rem;
+}
+
+tr {
+    margin: 0;
+}
+
+td {
+    font-family: 'Modak', cursive;
+    padding: 1rem;
+    text-align: center;
+    width: 20rem;
+    height: 20rem;
+    box-sizing: border-box;
+    border:0.2rem solid black;
+    margin: 0;
+    background-color: lightgoldenrodyellow;
+    font-size: 10rem;
+}

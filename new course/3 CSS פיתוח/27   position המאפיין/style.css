@@ -1,0 +1,38 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background: crimson;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    background: crimson;
+    border-radius: 50px;
+}
+
+.container {
+    background-color: lightskyblue;
+    width: 600px;
+    height: 300px;
+    position: relative;
+}
+
+.container div {
+    position: absolute;
+}
+
+.container div:nth-child(1) {
+    top: calc(50% - 50px);
+    left: calc(25% - 50px);
+
+}
+.container div:nth-child(2) {
+    top: calc(50% - 50px);
+    left: calc(75% - 50px);
+}
+
+.container div:nth-child(3) {
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+}

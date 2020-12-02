@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF8"/>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Faster+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="traning41.css"/>
+        <title>snake</title>
+    </head>
+    <body>
+        <div class="allGame">
+            <h1>Snake Game</h1>
+            <svg class="svgBoard" viewBox="0 0 810 810">
+              <defs>
+                  <pattern id="pattern1" x="0" y="0" width="0.2" height="0.2" patternUnits="objectBoundingBox" patternTransform="rotate(35)">
+                    <circle cx="8" cy="8" r="8" style="fill:black"/>
+                  </pattern>
+                  <pattern id="pattern2" x="0" y="0" width="0.2" height="0.2" patternUnits="objectBoundingBox" patternTransform="rotate(35)">
+                    <circle cx="10" cy="10" r="10" style="fill: #1f5b73"/>
+                  </pattern>
+                  <pattern id="pattern3" x="0" y="0" width="0.2" height="0.2" patternUnits="objectBoundingBox" patternTransform="rotate(35)">
+                    <circle cx="10" cy="10" r="10" style="fill: #1f5b73"/>
+                  </pattern>
+                  <pattern id="pattern4" x="0" y="0" width="0.2" height="0.2" patternUnits="objectBoundingBox" patternTransform="rotate(35)">
+                    <circle cx="10" cy="10" r="10" style="fill: #4D163F"/>
+                  </pattern>  
+                  <pattern id="stripes" viewBox="0,0,8,8" width="8" height="8" patternUnits="userSpaceOnUse">
+                      <polygon points="0,0 4,0 0,4" fill="red"></polygon>
+                      <polygon points="0,8 8,0 8,4 4,8" fill="red"></polygon>
+                      <polygon points="0,4 0,8 8,0 4,0" fill="#e2435d"></polygon>
+                      <polygon points="4,8 8,8 8,4" fill="#e2435d"></polygon>
+                    </pattern>
+              </defs>
+            </svg>
+            <p class="gameOver">Game Over</p>
+            <div class="name">
+                <div class="alert">
+                    <label dir="rtl">שם:</label>
+                    <input dir="rtl" type="name"/>
+                    <button type="submit" class="btn-primary btn-sm">אישור</button>
+                </div>
+            </div>
+        </div>
+        <div class="scoreTable">
+          <table class= "table">
+            <thead>
+              <tr>
+                <th class="table-dark" scope="col">:נקודות</th>
+                <th class="table-dark" scope="col">:שם</th>
+              </tr>
+            </thead>
+            <tbody>
+             
+            </tbody>
+          </table>
+        </div>
+        <aside>
+            <form>
+                <p dir="rtl">נקודות:<span>0</span> </p>
+                <button class="newGame btn btn-secondary">משחק חדש</button>
+                <div class="dropdown">
+                    <button class="btn btn-secondary" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      בחר רמה
+                    </button>
+                    <div class="dropdown-menu speed" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button" value="1">רמה 1</button>
+                      <button class="dropdown-item" type="button" value="2">רמה 2</button>
+                      <button class="dropdown-item" type="button" value="3">רמה 3</button>
+                    </div>
+                  </div>
+                  <div class="dropdown">
+                    <button class="btn btn-secondary" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      בחר גוון
+                    </button>
+                    <div class="dropdown-menu color" aria-labelledby="dropdownMenu2">
+                      <button class="dropdown-item" type="button" value="1">גוון 1</button>
+                      <button class="dropdown-item" type="button" value="2">גוון 2</button>
+                      <button class="dropdown-item" type="button" value="3">גוון 3</button>
+                      <button class="dropdown-item" type="button" value="4">גוון 4</button>
+                    </div>
+                  </div>
+                  <button class="showScoreBtn btn btn-secondary">נקודות</button>
+            </form>
+        </aside>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/2.0.5/velocity.ui.min.js"></script>
+       <script src="traning4.js"></script>
+    </body>
+</html>

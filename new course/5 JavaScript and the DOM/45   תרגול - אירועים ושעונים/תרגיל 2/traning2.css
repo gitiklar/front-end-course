@@ -1,0 +1,35 @@
+body,html {
+    padding: 0; margin: 0; font-size: 10px; font-family: 'Rubik'; width: 100vw;
+}
+
+h1 {
+    text-align: center;
+    font-size: 5rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    font-size: 3rem;
+}
+
+textarea {
+    font-family: 'Rubik';
+    width: 80vw;
+    box-sizing: border-box;
+    height: 30vh;
+    font-size: 4rem;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 5px;
+    width: 12rem;
+    height: 4rem;
+    margin-left: calc(50vw - 6rem);
+}
