@@ -44,6 +44,10 @@ You can see in Activity tab.
 In Activity tab you can click "Open app" to see the app in browther and this is the url.
 
 
+link to learn How to deploy your app to the web using Express.js and Heroku
+https://www.freecodecamp.org/news/how-to-deploy-your-site-using-express-and-heroku/
+
+
 
 
 
