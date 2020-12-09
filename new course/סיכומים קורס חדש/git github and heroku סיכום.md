@@ -3,10 +3,10 @@ Install git window</br>
 Install gitbash</br>
 
 1.) git init inside my project directory</br>
-    git status to show current status</br>
+    git status to show current status</br></br>
 2.) git add . for all files at the first time</br>
     git add 'file name path1' 'file name path2' for other times</br>
-    git reset 'file name path1' 'file name path2' </br>
+    git reset 'file name path1' 'file name path2' </br></br>
 3.) git commit -m 'my comment'</br>
               
                                   GitHub
