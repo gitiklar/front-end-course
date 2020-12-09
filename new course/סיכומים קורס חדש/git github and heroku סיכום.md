@@ -11,7 +11,7 @@ Install gitbash</br>
               
                                   GitHub
 4.) Create "New reoisitory" in gitHub and then (These lines you can also be seen in GitHub): </br>
-        a.) git remote add origin https://github.com/gitiklar/your-repository-name.git</br>
+        a.) git remote add origin https://github.com/gitiklar/yourRepositoryName.git</br>
         b.) git branch -M main</br>
         c.) git push -u origin main</br>
 
