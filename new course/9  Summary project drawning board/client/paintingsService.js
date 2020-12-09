@@ -29,8 +29,12 @@ export default class PaintingService {
     }
 
     async initializationToken() {
-        this.token = (await this.doFetch(`${serverUrl}/token` , 'GET')).token;
-        this.socket.emit('subscribe' , this.token);
+        try {
+            this.token = (await this.doFetch(`${serverUrl}/token` , 'GET')).token;
+            this.socket.emit('subscribe' , this.token);
+        } catch (err) {
+              console.log("Error: ", err);
+        }
     }
 
     async shareMyPainting(paintingName) {
@@ -46,8 +50,12 @@ export default class PaintingService {
     }
 
     async loadAllPaintingsNames() {
-        const data = await this.doFetch(`${serverUrl}/sharesPaintingNames` , 'GET');
-        return data;
+        try {
+            const data = await this.doFetch(`${serverUrl}/sharesPaintingNames` , 'GET');
+            return data;
+        } catch (err) {
+              console.log("Error: ", err);
+        }
     }
 
     updateMySharedPaintingData(paintingName , data) {
