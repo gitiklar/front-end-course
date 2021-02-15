@@ -56,4 +56,4 @@ app.get('/messages', verifyUser, function(req, res) {
     res.send(publicMessages.concat(myMessages));
 });
 
-app.listen(8080);
+app.listen(9000);

@@ -30,14 +30,14 @@ Slider.prototype.startTimer = function() {
 
 Slider.prototype.moveImage = function() {
     for(let img of this.images.children) {
-        img.classList.remove('animated','flip');
+        img.classList.remove('animated','slideInRight');
     }
     this.currentIndex++;
     if(this.currentIndex === this.imagesCount) {
         this.currentIndex = 0;
     }
     this.images.style.left = this.currentIndex*-1*this.widthImage + "px";
-    this.images.children[this.currentIndex].classList.add('animated','flip');
+    this.images.children[this.currentIndex].classList.add('animated','slideInRight');
     this.updateCircle();
 }
 
